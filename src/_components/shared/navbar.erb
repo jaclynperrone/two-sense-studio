@@ -1,11 +1,14 @@
-<header>
-  <img src="<%= relative_url '/images/logo.svg' %>" alt="Logo" />
-</header>
+<div class="site-header">
+  <header>
+    <img src="<%= relative_url '/images/tss-logo.png' %>" alt="Logo" />
+  </header>
 
-<nav>
-  <ul>
-    <li><a href="<%= relative_url '/' %>">Home</a></li>
-    <li><a href="<%= relative_url '/about' %>">About</a></li>
-    <li><a href="<%= relative_url '/posts' %>">Posts</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="<%= relative_url '/values' %>">Values</a></li>
+      <li><a href="<%= relative_url '/services' %>">Services</a></li>
+      <li><a href="<%= relative_url '/partnerships' %>">Partnerships</a></li>
+      <li><a href="<%= relative_url '/contact' %>">Say Hello</a></li>
+    </ul>
+  </nav>
+</div>

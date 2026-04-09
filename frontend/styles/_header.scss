@@ -1,0 +1,23 @@
+.site-header {
+	display: flex;
+	/*background: green;*/
+	justify-content: space-between;
+	padding: 0 1em;
+}
+
+header {
+	width: 175px;
+	img {
+		width: 100%;
+	}
+}
+
+.site-nav {
+	display: flex;
+	list-style: none;
+	/*background: yellowgreen;*/
+
+	li {
+		padding: 0 5em;
+	}
+}

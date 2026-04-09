@@ -1,4 +1,6 @@
-:root {
+@import '_header.scss';
+
+/*:root {
   --body-background: #f2f2f2;
   --body-color: #444;
   --heading-color: black;
@@ -82,3 +84,4 @@ hr {
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
 }
+*/
