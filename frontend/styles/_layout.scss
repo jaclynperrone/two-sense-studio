@@ -1,5 +1,11 @@
 main {
 	padding: 8em;
-	background: aliceblue;
+}
+
+.basic-grid {
 	display: grid;
+}
+
+.basic-grid--2-col {
+	grid-template-columns: 1fr 1fr;
 }
