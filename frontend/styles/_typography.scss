@@ -1,0 +1,19 @@
+html {
+	color: var(--color__body-text);
+	font-family: "Urbanist", sans-serif;
+}
+
+a {
+	font-family: "Geist Mono", monospace;
+	font-weight: 500;
+	color: var(--color__link-text);
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}

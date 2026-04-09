@@ -1,12 +1,12 @@
 .site-header {
 	display: flex;
-	/*background: green;*/
 	justify-content: space-between;
 	padding: 0 1em;
+	align-items: center;
 }
 
 header {
-	width: 175px;
+	width: 145px;
 	img {
 		width: 100%;
 	}
@@ -15,9 +15,16 @@ header {
 .site-nav {
 	display: flex;
 	list-style: none;
-	/*background: yellowgreen;*/
+	justify-content: space-between;
 
 	li {
-		padding: 0 5em;
+		padding: 0 2em;
+		a {
+			text-decoration: none;
+			color: var(--color__body-text);
+		}
+	}
+	.active {
+		color: #7FADE4;
 	}
 }
