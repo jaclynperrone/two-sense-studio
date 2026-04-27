@@ -1,11 +1,33 @@
+$small-screen: 600px;
+
 main {
-	padding: 8em;
+	padding: 2em;
+
+	@media only screen and (min-width: $small-screen) {
+		padding: 8em;
+	}
 }
 
 .basic-grid {
 	display: grid;
+	row-gap: 4em;
+	grid-gap: 4em;
+	align-items: center;
+}
+
+.basic-grid--services {
+	row-gap: 1em;
+	margin-bottom: 4em;
 }
 
 .basic-grid--2-col {
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
+
+	@media only screen and (min-width: $small-screen) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.basic-grid--full-width {
+	grid-column: 1 / -1;
 }

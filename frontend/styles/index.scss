@@ -1,7 +1,7 @@
-@import '_variables.scss';
-@import '_header.scss';
-@import '_layout.scss';
-@import '_typography.scss';
+@use 'variables';
+@use 'header';
+@use 'layout';
+@use 'typography';
 
 /*:root {
   --body-background: #f2f2f2;
