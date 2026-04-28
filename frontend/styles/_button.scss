@@ -1,0 +1,31 @@
+/* Tag */
+
+.button {
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border: 1px solid #d0e6ff;
+	box-shadow: 1px 1px 144px 0px rgba(115, 174, 233, 0.8);
+	border-radius: 6rem;
+	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	display: inline-block;
+
+	&:hover {
+    // 1. The Lift
+    transform: translateY(-3px) scale(1.02);
+    
+    // 2. The Glow (Increasing opacity and slightly tightening the blur)
+    box-shadow: 1px 1px 80px 0px rgba(115, 174, 233, 0.9);
+    
+    // 3. The Border (Make it feel "active")
+    border-color: #73aee9;
+    
+    // 4. Subtle background shift
+    background-color: rgba(208, 230, 255, 0.1);
+  }
+
+  &:active {
+    // This provides "click" feedback
+    transform: translateY(0) scale(0.98);
+    box-shadow: 1px 1px 20px 0px rgba(115, 174, 233, 0.4);
+  }
+}

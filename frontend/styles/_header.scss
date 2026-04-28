@@ -1,7 +1,7 @@
 .site-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 1em;
+	padding: 0 1rem;
 	align-items: center;
 }
 
@@ -16,15 +16,33 @@ header {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
+}
 
-	li {
-		padding: 0 2em;
-		a {
-			text-decoration: none;
+
+.site-nav__item {
+	padding: 0 2rem;
+
+	a {
+		text-decoration: none;
+		color: var(--color__body-text);
+  	display: inline-block; // Essential for the transform to work!
+  	transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  	&:not(.nav-item__active):hover{
+  		transform: scale(1.1);
+  	}
+	}
+
+	.site-nav__contact {
+		color: var(--color__link-text);
+
+		&.nav-item__active {
 			color: var(--color__body-text);
 		}
 	}
-	.active {
-		color: #7fade4;
-	}
+}
+
+.nav-item__active {
+		border-bottom: 12px solid; 
+	  border-image: url('/images/nav-brush.png') 0 20 100% 20 fill stretch;
 }

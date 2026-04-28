@@ -1,23 +1,23 @@
 $small-screen: 600px;
 
 main {
-	padding: 2em;
+	padding: 2rem;
 
 	@media only screen and (min-width: $small-screen) {
-		padding: 8em;
+		padding: 8rem;
 	}
 }
 
 .basic-grid {
 	display: grid;
-	row-gap: 4em;
-	grid-gap: 4em;
+	row-gap: 4rem;
+	grid-gap: 4rem;
 	align-items: center;
 }
 
 .basic-grid--services {
-	row-gap: 1em;
-	margin-bottom: 4em;
+	row-gap: 1rem;
+	margin-bottom: 4rem;
 }
 
 .basic-grid--2-col {

@@ -5,10 +5,10 @@
 
   <nav>
     <ul class="site-nav">
-      <li><a href="<%= relative_url '/values' %>" class="<%= active_class?("/values/") %>">Values</a></li>
-      <li><a href="<%= relative_url '/services' %>" class="<%= active_class?("/services/") %>">Services</a></li>
-      <li><a href="<%= relative_url '/partnerships' %>" class="<%= active_class?("/partnerships/") %>">Partnerships</a></li>
-      <li><a href="<%= relative_url '/contact' %>" class="<%= active_class?("/contact/") %>">Say Hello</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/values' %>" class="<%= active_class?("/values/") %>">Values</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/services' %>" class="<%= active_class?("/services/") %>">Services</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/partnerships' %>" class="<%= active_class?("/partnerships/") %>">Partnerships</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/contact' %>" class="site-nav__contact <%= active_class?("/contact/") %>">Say Hello</a></li>
     </ul>
   </nav>
 </div>
