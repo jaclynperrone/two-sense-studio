@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+.basic-grid {
+	display: grid;
+	row-gap: 4rem;
+	grid-gap: 4rem;
+	align-items: center;
+}
+
+.basic-grid-wrapper {
+	padding: 0 2rem;
+
+	@media only screen and (min-width: $small-screen) {
+		padding: 0 12rem;
+	}
+}
+
+.basic-grid--services {
+	row-gap: 1rem;
+	margin-bottom: 4rem;
+}
+
+.basic-grid--2-col {
+	grid-template-columns: 1fr;
+
+	@media only screen and (min-width: $small-screen) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.basic-grid--full-width {
+	grid-column: 1 / -1;
+}
+
+.basic-grid__image {
+	position: relative;
+}

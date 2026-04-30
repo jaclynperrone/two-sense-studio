@@ -5,32 +5,41 @@ layout: default
 title: Two Sense Studio - Values
 ---
 
-<h1>Values</h1>
-<div class="basic-grid basic-grid--2-col">
-	<div class="copy">
+<h1 class="values__heading">Values</h1>
+
+<div class="basic-grid-wrapper values__grid basic-grid basic-grid--2-col">
+	<div class="basic-grid__copy">
 		<h2>I. Lead with Empathy</h2>
 		<p>Empathy isn't just a soft skill; it’s a strategic superpower. I believe that before we can build anything meaningful, we have to truly understand the humans on the other side of the screen. I dive deep into their world to ensure the tools we create don't just function, they resonate.</p>
 	</div>
-	<div class="image"><img width="100px" src="<%= relative_url '/images/tss-logo.png' %>" alt="" /></div>
+	<div class="basic-grid__image">
+		<img class="values__image values__image--empathy" width="100px" src="<%= relative_url '/images/values_empathy.png' %>" alt="" /></div>
+</div>
 
-	<div class="image"><img width="100px" src="<%= relative_url '/images/tss-logo.png' %>" alt="" /></div>
-	<div class="copy">
-		<h2>II. Simplify the Complex</h2>
-		<p>The world is complicated enough; your tools shouldn't be. I thrive on taking messy, fragmented processes and distilling them into intuitive, seamless experiences. If a system is second nature to the user, they can spend less time fighting technology and more time doing what they do best.</p>
+
+	<div class="basic-grid-wrapper values__image-bg--simplify values__grid basic-grid basic-grid--2-col">
+		<div></div>
+			<!-- <div class="values__image-bg values__image-container basic-grid__image"><img class="values__image--simplify" src="<%= relative_url '/images/values_simplify.png' %>" alt="" /></div> -->
+		<div class="basic-grid__copy">
+			<h2>II. Simplify the Complex</h2>
+			<p>The world is complicated enough; your tools shouldn't be. I thrive on taking messy, fragmented processes and distilling them into intuitive, seamless experiences. If a system is second nature to the user, they can spend less time fighting technology and more time doing what they do best.</p>
+		</div>
 	</div>
 
-	<div class="basic-grid--full-width">
-		<div class="image basic-grid--full-width"><img width="100px" src="<%= relative_url '/images/tss-logo.png' %>" alt="" /></div>
+	<div class="values__grid basic-grid--full-width">
+		<div class="basic-grid__image basic-grid--full-width"><img class="values__image--build-1" width="100px" src="<%= relative_url '/images/values_build1.png' %>" alt="" /></div>
 		<div class="copy basic-grid--full-width">
 			<h2>III. Build for the Long Term</h2>
 			<p>I don’t believe in "quick fixes" that create technical or design debt. I build with an eye on the horizon—creating flexible, scalable systems that enable your team to grow. Whether it’s a foundational design system or a strategic roadmap, I provide the toolkit that ensures consistency and confidence as you evolve.</p>
 		</div>
-		<div class="image basic-grid--full-width"><img width="100px" src="<%= relative_url '/images/tss-logo.png' %>" alt="" /></div>
+		<div class="basic-grid__image basic-grid--full-width"><img class="values__image--build-2" width="100px" src="<%= relative_url '/images/values_build2.png' %>" alt="" /></div>
 	</div>
 
-	<div class="copy">
-		<h2>IV. Empower People</h2>
-		<p>At the core of every project is a simple belief: People deserve the best tools possible to help them be their best selves. My goal is to bridge the gap between human potential and digital capability, creating environments where both teams and customers can thrive.</p>
+	<div class="values__grid basic-grid basic-grid--2-col">
+		<div class="basic-grid__copy">
+			<h2>IV. Empower People</h2>
+			<p>At the core of every project is a simple belief: People deserve the best tools possible to help them be their best selves. My goal is to bridge the gap between human potential and digital capability, creating environments where both teams and customers can thrive.</p>
+		</div>
+		<div class="values__image-container basic-grid__image"><img class="values__image values__image--empower" width="100px" src="<%= relative_url '/images/values_empower.png' %>" alt="" /></div>
 	</div>
-	<div class="image"><img width="100px" src="<%= relative_url '/images/tss-logo.png' %>" alt="" /></div>
-</div>
+
