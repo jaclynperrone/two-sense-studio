@@ -7,11 +7,23 @@
 	align-items: center;
 }
 
-.basic-grid-wrapper {
-	padding: 0 2rem;
+.basic-grid-wrapper--horizontal {
+	padding-left: 2rem;
+	padding-right: 2rem;
 
 	@media only screen and (min-width: $small-screen) {
-		padding: 0 12rem;
+		padding-left: 12rem;
+		padding-right: 12rem;
+	}
+}
+
+.basic-grid-wrapper--vertical {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+
+	@media only screen and (min-width: $small-screen) {
+		padding-top: 10rem;
+	padding-bottom: 10rem;
 	}
 }
 
