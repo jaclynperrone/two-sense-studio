@@ -2,6 +2,33 @@
   --color__link-text: #cc5500;
   --color__body-text: #1d171d;
   --color__tint: #7fade4;
+  --color__menu-bg: #1d171d;
 }
 
-$small-screen: 600px;
+$breakpoint-small: 35em;
+$breakpoint-medium: 48em;
+$breakpoint-large: 60em;
+$breakpoint-x-large: 75em;
+$breakpoint-xx-large: 100em;
+
+
+html {
+  @media only screen and (max-width: $breakpoint-small) {
+      background: red;
+  }
+  @media only screen and (min-width: $breakpoint-small) {
+      background: orange;
+  }
+    @media only screen and (min-width: $breakpoint-medium) {
+      background: yellow;
+  }
+    @media only screen and (min-width: $breakpoint-large) {
+      background: green;
+  }
+    @media only screen and (min-width: $breakpoint-x-large) {
+      background: blue;
+  }
+    @media only screen and (min-width: $breakpoint-xx-large) {
+      background: purple;
+  }
+}

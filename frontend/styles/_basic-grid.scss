@@ -11,7 +11,7 @@
 	padding-left: 2rem;
 	padding-right: 2rem;
 
-	@media only screen and (min-width: $small-screen) {
+	@media only screen and (min-width: $breakpoint-small) {
 		padding-left: 12rem;
 		padding-right: 12rem;
 	}
@@ -21,9 +21,9 @@
 	padding-top: 10rem;
 	padding-bottom: 10rem;
 
-	@media only screen and (min-width: $small-screen) {
+	@media only screen and (min-width: $breakpoint-small) {
 		padding-top: 10rem;
-	padding-bottom: 10rem;
+		padding-bottom: 10rem;
 	}
 }
 
@@ -35,7 +35,7 @@
 .basic-grid--2-col {
 	grid-template-columns: 1fr;
 
-	@media only screen and (min-width: $small-screen) {
+	@media only screen and (min-width: $breakpoint-small) {
 		grid-template-columns: 1fr 1fr;
 	}
 }

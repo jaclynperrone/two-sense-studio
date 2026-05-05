@@ -1,10 +1,30 @@
 <div class="site-header">
-  <header>
+  <header class="site-header__logo">
     <a href="/"><img src="<%= relative_url '/images/tss-logo.png' %>" alt="Logo" /></a>
   </header>
 
   <nav>
     <ul class="site-nav">
+      <li class="site-nav__item"><a href="<%= relative_url '/values' %>" class="<%= active_class?("/values/") %>">Values</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/services' %>" class="<%= active_class?("/services/") %>">Services</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/partnerships' %>" class="<%= active_class?("/partnerships/") %>">Partnerships</a></li>
+      <li class="site-nav__item"><a href="<%= relative_url '/contact' %>" class="site-nav__contact <%= active_class?("/contact/") %>">Say Hello</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="site-header site-header--mobile">
+  <header class="site-header__logo">
+    <a href="/"><img src="<%= relative_url '/images/tss-logo.png' %>" alt="Logo" /></a>
+  </header>
+
+  <nav>
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+
+    <label for="menu-toggle" class="site-nav__menu">
+    </label>
+
+    <ul class="site-nav site-nav--mobile">
       <li class="site-nav__item"><a href="<%= relative_url '/values' %>" class="<%= active_class?("/values/") %>">Values</a></li>
       <li class="site-nav__item"><a href="<%= relative_url '/services' %>" class="<%= active_class?("/services/") %>">Services</a></li>
       <li class="site-nav__item"><a href="<%= relative_url '/partnerships' %>" class="<%= active_class?("/partnerships/") %>">Partnerships</a></li>

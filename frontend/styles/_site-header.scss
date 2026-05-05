@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+.site-header__logo {
+	width: 125px;
+
+	@media only screen and (min-width: $breakpoint-medium) {
+		width: 145px;
+  }
+
+	img {
+		width: 100%;
+	}
+}
+
+.site-header {
+	justify-content: space-between;
+	padding: 0 1rem;
+	align-items: center;
+	position: relative;
+}
+
+.site-header {
+	display: none;
+
+	@media only screen and (min-width: $breakpoint-medium) {
+		display: flex;
+  }
+}
+
+.site-header--mobile {
+	display: flex;
+
+	@media only screen and (min-width: $breakpoint-medium) {
+		display: none;
+  }
+}
+
+
