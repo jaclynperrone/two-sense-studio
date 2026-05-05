@@ -13,36 +13,53 @@
 .values__image-container {
 	//aspect-ratio: 16 / 9;
 	//background: red;
-	position: relative;
+	//position: relative;
 }
 
 .values__image {
 	//position: absolute;
 }
 
+.values__simplify-mobile {
+	display: block;
+	@media only screen and (min-width: $breakpoint-medium) {
+		display: none;
+	}
+}
+
 .values__image--build {
 	text-align: center;
 }
 
-.values__image--empathy {
-	//top: -50%;
-	//left: 0;
-	width: 100%;
-
-}
 .values__image-bg {
 	position: relative;
 }
 
 .values__image-bg--simplify {
-	background: url("/images/values_simplify.png") 80% center / cover no-repeat;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 
-	@media only screen and (min-width: $breakpoint-small) {
+	@media only screen and (min-width: $breakpoint-medium) {
 		padding-top: 30rem;
 		padding-bottom: 30rem;
+		background: url("/images/values_simplify.png") 65% center / cover no-repeat;
 	}
+
+	@media only screen and (min-width: $breakpoint-large) {
+		background-position: 70% center;
+  }
+
+	@media only screen and (min-width: $breakpoint-x-large) {
+		background-position: 80% center;
+  }
+
+	@media only screen and (min-width: $breakpoint-xx-large) {
+		background-position: 100% center;
+  }
+
+  @media only screen and (min-width: 1800px) {
+		//background-position: 10% center;
+  }
 }
 
 .values__image--simplify {
@@ -61,15 +78,27 @@
 	
 }
 
+img.values__image--empathy, img.values__image--empower  {
+	//top: -50%;
+	//left: 0;
+	width: 50%;
+
+	@media only screen and (min-width: $breakpoint-medium) {
+		width: 100%;
+	}
+
+}
+
 .values__image--build-1 {
-	width: 330px;
+	// width: 330px;
+	width: 30%;
 }
 
 .values__image--build-2 {
-	width: 1025px;
+	//width: 1025px;
 	
 }
 
 .values__image--empower {
-	width: 400px;
+	//width: 400px;
 }
