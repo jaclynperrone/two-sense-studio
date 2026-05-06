@@ -173,7 +173,21 @@ const sassPlugin = (options) => ({
         sourceMap: true,
         ...options
       }
-      const result = sass.compile(args.path, localOptions)
+      let result
+      try {
+        result = await sass.compileAsync(args.path, {
+          ...localOptions,
+          logger: sass.Logger.silent
+        })
+      } catch(err) {
+        // Glob all scss files in the project as watchFiles so esbuild
+        // keeps watching even when Sass can't tell us what it loaded
+        const allScss = glob.sync("frontend/**/*.{scss,sass}", { absolute: true })
+        return {
+          errors: [{ text: err.sassMessage || err.message }],
+          watchFiles: [args.path, ...allScss],
+        }
+      }
 
       const watchPaths = result.loadedUrls
         .filter((x) => x.protocol === "file:" && !x.pathname.startsWith(modulesFolder.pathname))
