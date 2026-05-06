@@ -67,7 +67,9 @@
 .basic-grid__image {
 	position: relative;
 	text-align: center;
+}
 
+.basic-grid__image--full-width {
 	img {
 		width: 100%;
 	}

@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+.partnerships__image {
+	width: 75%;
+}
+
+.partnerships__mobile-image {
+	display: block;
+	
+	@media only screen and (min-width: $breakpoint-medium) {
+		display: none;
+	}
+}
+
+
+.partnerships__web-image {
+	display: none;
+
+	@media only screen and (min-width: $breakpoint-medium) {
+		display: block;
+	}
+}
+
