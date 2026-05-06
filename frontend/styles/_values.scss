@@ -54,7 +54,7 @@
   }
 
 	@media only screen and (min-width: $breakpoint-xx-large) {
-		background-position: 100% center;
+		background-position: 125% center;
   }
 
   @media only screen and (min-width: 1800px) {
@@ -84,7 +84,7 @@ img.values__image--empathy, img.values__image--empower  {
 	width: 50%;
 
 	@media only screen and (min-width: $breakpoint-medium) {
-		width: 100%;
+		width: 80%;
 	}
 
 }
