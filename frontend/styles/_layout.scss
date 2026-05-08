@@ -7,3 +7,24 @@ body {
 html {
 	background: #f9fcff;
 }
+
+// html {
+//   @media only screen and (max-width: $breakpoint-small) {
+//       background: red;
+//   }
+//   @media only screen and (min-width: $breakpoint-small) {
+//       background: orange;
+//   }
+//     @media only screen and (min-width: $breakpoint-medium) {
+//       background: yellow;
+//   }
+//     @media only screen and (min-width: $breakpoint-large) {
+//       background: green;
+//   }
+//     @media only screen and (min-width: $breakpoint-x-large) {
+//       background: blue;
+//   }
+//     @media only screen and (min-width: $breakpoint-xx-large) {
+//       background: purple;
+//   }
+// }
