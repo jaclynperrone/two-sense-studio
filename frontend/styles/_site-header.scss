@@ -1,10 +1,11 @@
 @use 'variables' as *;
 
 .site-header__logo {
-	width: 125px;
+	padding: 1rem;
+	width: 120px;
 
 	@media only screen and (min-width: $breakpoint-medium) {
-		width: 145px;
+		width: 140px;
   }
 
 	img {

@@ -75,9 +75,10 @@
   }
 
 	a {
+		border-bottom: 12px solid transparent;
+		display: inline-block;
 		color: var(--color__body-text);
 		text-decoration: none;
-  	display: inline-block;
   	transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   	&:not(.nav-item__active):hover{
