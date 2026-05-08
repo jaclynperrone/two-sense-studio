@@ -2,8 +2,15 @@
 
 .contact {
 	background: url("/images/contact_border.png") left center / contain no-repeat;
-  margin-top: 4rem;
   padding: 2rem 2rem 2rem 4rem;
+
+  @media only screen and (min-width: $breakpoint-large) {
+		margin-top: 4rem;
+  }
+}
+
+.contact__heading {
+	margin-bottom: 4rem;
 }
 
 .contact__group {
@@ -41,3 +48,43 @@
   justify-content: center;
   margin-top: 3rem;
 }
+
+.contact__image-bg--plane {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	@media only screen and (min-width: $breakpoint-large) {
+		// padding-top: 30rem;
+		// padding-bottom: 30rem;
+		background: url("/images/contact_plane.png") 90% center / 55% no-repeat;
+	}
+
+	// @media only screen and (min-width: $breakpoint-large) {
+	// 	background-position: 90% center;
+	// 	background-size: 55%;
+  // }
+
+	@media only screen and (min-width: $breakpoint-x-large) {
+		background-size: contain;
+  }
+
+	@media only screen and (min-width: $breakpoint-xx-large) {
+		background-position: 80% center;
+		background-size: contain;
+  }
+
+  @media only screen and (min-width: 1800px) {
+		//background-position: 10% center;
+  }
+}
+
+.contact__plane-mobile {
+	display: block;
+	@media only screen and (min-width: $breakpoint-large) {
+		display: none;
+	}
+}
+
+// .contact__image--plane {
+// 	width: 80%;
+// }

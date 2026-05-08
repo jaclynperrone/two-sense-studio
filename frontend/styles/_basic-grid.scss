@@ -60,6 +60,15 @@
 	}
 }
 
+.basic-grid--2-col--contact {
+	grid-template-columns: 1fr;
+
+	@media only screen and (min-width: $breakpoint-large) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
 .basic-grid--full-width {
 	grid-column: 1 / -1;
 }
