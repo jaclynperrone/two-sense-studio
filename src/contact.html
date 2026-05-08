@@ -5,12 +5,42 @@ layout: default
 title: Two Sense Studio - Contact
 ---
 
-<h1>Say Hello</h1>
-<div class="basic-grid basic-grid--2-col">
-	<div class="left">
+<h1 class="page-heading">Say Hello</h1>
+
+<div class="basic-grid-wrapper--horizontal values__grid basic-grid basic-grid--2-col">
+	<div class="basic-grid__copy">
 		<p>Whether you’re a founder with a raw idea or a product lead looking for a fractional partner, let’s explore how Two Sense Studio can enable your next phase.</p>
 	</div>
-	<div class="right">
-		<img width="100px" src="<%= relative_url '/images/tss-logo.png' %>" alt="" />
-	</div>
+	<div class="basic-grid__image">
+		<img class="values__image values__image--empathy" src="<%= relative_url '/images/contact_plane.png' %>" alt="" /></div>
+</div>
+
+<div class="basic-grid-wrapper--horizontal values__grid basic-grid basic-grid--full-width">
+	<section class="contact">
+	  <form class="contact__form">
+	    <div class="contact__group">
+	      <label for="name">What is your name?</label>
+	      <input type="text" id="name" name="name" placeholder="Your name">
+	    </div>
+
+	    <div class="contact__group">
+	      <label for="email">Where can I best reach you?</label>
+	      <input type="email" id="email" name="email" placeholder="Your email">
+	    </div>
+
+	    <div class="contact__group">
+	      <label for="challenge">Tell me a bit about what you're building or the challenge your team is facing.</label>
+	      <textarea id="challenge" name="challenge" placeholder="Your answer" rows="5"></textarea>
+	    </div>
+
+	    <div class="contact__group">
+	      <label for="success">What does success look like for this project?</label>
+	      <textarea id="success" name="success" placeholder="Your answer" rows="5"></textarea>
+	    </div>
+
+	    <div class="contact__action">
+	      <button type="submit" class="button">Send Message</button>
+	    </div>
+	  </form>
+</section>
 </div>

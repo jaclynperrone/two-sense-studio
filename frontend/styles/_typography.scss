@@ -3,14 +3,25 @@ html {
 	font-family: "Urbanist", sans-serif;
 }
 
-a {
-	font-family: "Geist Mono", monospace;
-	font-weight: 500;
+a, button {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 	color: var(--color__link-text);
+	font-family: "Geist Mono", monospace;
+	font-weight: 600;
+  text-rendering: optimizeLegibility;
 
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+input, textarea, select, button {
+  box-sizing: border-box;
+}
+
+button {
+	font-size: 1rem;
 }
 
 h1 {

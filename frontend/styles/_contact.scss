@@ -1,0 +1,43 @@
+@use 'variables' as *;
+
+.contact {
+	background: url("/images/contact_border.png") left center / contain no-repeat;
+  margin-top: 4rem;
+  padding: 2rem 2rem 2rem 4rem;
+}
+
+.contact__group {
+    margin-bottom: 2.5rem;
+
+    label {
+      display: block;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      background-color: #fff;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      
+      &::placeholder {
+        font-family: "Urbanist", sans-serif;
+        color: #a0a0a0;
+      }
+
+      &:focus {
+        outline: 2px solid #e67e22; // Using your accent orange
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    }
+ }
+
+.contact__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
