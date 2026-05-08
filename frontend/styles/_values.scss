@@ -5,23 +5,9 @@
 	margin-bottom: 10rem;
 }
 
-.values__grid {
-//	background: aliceblue;
-	// grid-gap: 10rem;
-}
-
-.values__image-container {
-	//aspect-ratio: 16 / 9;
-	//background: red;
-	//position: relative;
-}
-
-.values__image {
-	//position: absolute;
-}
-
 .values__simplify-mobile {
 	display: block;
+
 	@media only screen and (min-width: $breakpoint-medium) {
 		display: none;
 	}
@@ -29,10 +15,6 @@
 
 .values__image--build {
 	text-align: center;
-}
-
-.values__image-bg {
-	position: relative;
 }
 
 .values__image-bg--simplify {
@@ -56,31 +38,9 @@
 	@media only screen and (min-width: $breakpoint-xx-large) {
 		background-position: 125% center;
   }
-
-  @media only screen and (min-width: 1800px) {
-		//background-position: 10% center;
-  }
 }
 
-.values__image--simplify {
-	// position: absolute;
-	// width: 1870px;
-	// left: -80%;
-	// top: -80%;
-	// grid-column: 1 / -1;
-  // grid-row: 1;
-  
-  // // 2. Make it behave like a background
-  // width: 100%;
-  // height: 100%;
-  // object-fit: cover; // This is the "background-size: cover" equivalent
-  // z-index: 1;
-	
-}
-
-img.values__image--empathy, img.values__image--empower  {
-	//top: -50%;
-	//left: 0;
+img.values__image--empathy, img.values__image--empower {
 	width: 50%;
 
 	@media only screen and (min-width: $breakpoint-medium) {
@@ -90,15 +50,5 @@ img.values__image--empathy, img.values__image--empower  {
 }
 
 .values__image--build-1 {
-	// width: 330px;
 	width: 30%;
-}
-
-.values__image--build-2 {
-	//width: 1025px;
-	
-}
-
-.values__image--empower {
-	//width: 400px;
 }

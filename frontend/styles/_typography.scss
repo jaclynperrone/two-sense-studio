@@ -17,12 +17,12 @@ a, button {
 }
 
 input, textarea, select {
-	border: 1px solid #d0e6ff;
-	font-family: "Urbanist", sans-serif;
-	padding: 1rem;
 	background-color: #fff;
 	border-radius: 0.25rem;
+	border: 1px solid #d0e6ff;
+	font-family: "Urbanist", sans-serif;
 	font-size: 1rem;
+	padding: 1rem;
 }
 
 input, textarea, select, button {
@@ -43,13 +43,13 @@ h2 {
 	font-weight: 600;
 }
 
+p {
+	font-size: 1.125rem;
+}
+
 .intro {
 	font-size: 1.5rem;
 	margin-bottom: 2.5rem;
-}
-
-p {
-	font-size: 1.125rem;
 }
 
 .page-heading {
