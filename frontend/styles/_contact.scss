@@ -3,6 +3,7 @@
 .contact {
 	background: url("/images/contact_border.png") left center / contain no-repeat;
   padding: 2rem 2rem 2rem 4rem;
+  margin-bottom: 8rem;
 
   @media only screen and (min-width: $breakpoint-large) {
 		margin-top: 4rem;
@@ -24,15 +25,9 @@
 
     input, textarea {
       width: 100%;
-      padding: 1rem;
-      border: none;
-      background-color: #fff;
-      border-radius: 4px;
-      font-size: 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 1px 1px 144px 0px rgba(115, 174, 233, 0.2);
       
       &::placeholder {
-        font-family: "Urbanist", sans-serif;
         color: #a0a0a0;
       }
 

@@ -16,6 +16,15 @@ a, button {
 	}
 }
 
+input, textarea, select {
+	border: 1px solid #d0e6ff;
+	font-family: "Urbanist", sans-serif;
+	padding: 1rem;
+	background-color: #fff;
+	border-radius: 0.25rem;
+	font-size: 1rem;
+}
+
 input, textarea, select, button {
   box-sizing: border-box;
 }
